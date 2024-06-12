@@ -1,0 +1,213 @@
+﻿@model IEnumerable<Rasai_web.Models.MenuItem>
+
+@{
+    ViewData["Title"] = "Admin Page";
+}
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/Admin.css" rel="stylesheet" />
+    <title>@ViewData["Title"]</title>
+</head>
+<style>
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        font-size: 16px;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        height = 100%;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        padding: 0.5rem 5rem;
+        /*Added padding to the navbar */
+    }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: text-decoration 0.3s ease;
+        }
+
+            .navbar a:hover {
+                background-color: white;
+                color: black;
+            }
+
+    .navLinks {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .navLinks a {
+            padding: 0 5rem;
+        }
+
+    .logo img {
+        height: 3.2em;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        align-self: flex-end;
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .footer-contacts {
+        padding: 0 5em;
+    }
+
+    .footer a,
+    .footer p {
+        text-decoration: none;
+        font-family: 'Franklin Gothic Medium', sans-serif;
+        font-size: 20px;
+        color: white;
+        margin: 0 2em;
+    }
+
+
+    .viewMenuButton .btn {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+        .viewMenuButton .btn:hover {
+            background-color: #0056b3;
+        }
+
+    
+
+    .bookings {
+        width: 60%;
+        margin: auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-top: 3rem;
+    }
+
+    .booking-entry {
+        margin-bottom: 20px;
+    }
+
+        .booking-entry h4 {
+            margin-top: 0;
+        }
+
+    hr {
+        border: none;
+        border-top: 1px solid #ddd;
+    }
+
+</style>
+
+<div class="wrapper">
+
+
+<div class="navbar">
+    <div class="logo-box">
+        <a asp-controller="Home" asp-action="Index" class="logo">
+            <img src="/lib/Logo.png" alt="Go to home page">
+        </a>
+    </div>
+    <div class="navLinks">
+            <a asp-controller="Home" asp-action="About">About</a>
+            <a asp-controller="Home" asp-action="Menu">Menu</a>
+        <a asp-controller="Home" asp-action="Booking">Booking</a>
+        <a asp-controller="Home" asp-action="Admin">Login</a>
+
+    </div>
+</div>
+
+
+    <div class="admin-container">
+        <nav class="sidebar">
+            <ul>
+                <li><a asp-controller="Home" asp-action="Admin">Admin</a></li>
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-controller="MenuItems" asp-action="Create">Create Menu Item</a></li>
+                <li><a asp-controller="MenuItems" asp-action="index">Menu</a></li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <div class="admin-heading">
+                <h1>Admin Dashboard</h1>
+                <div class="createMenuButton">
+                    <a asp-controller="MenuItems" asp-action="Create" class="btn btn-primary">Create Item</a>
+                </div>
+                <div class="viewMenuButton">
+                    <a asp-controller="MenuItems" asp-action="Index" class="btn btn-primary">View Menu Items</a>
+                </div>
+            </div>
+            <div class="bookings">
+                <h3>Bookings will be displayed here.</h3>
+                <!-- Bookings will be displayed here -->
+                <!-- Example booking entries -->
+                <div class="booking-entry">
+                    <h4>Booking 1</h4>
+                    <p><strong>Name:</strong> John Doe</p>
+                    <p><strong>Phone:</strong> +1234567890</p>
+                    <p><strong>Email:</strong> john.doe@example.com</p>
+                    <p><strong>Event Date:</strong> 2024-06-10</p>
+                    <p><strong>Event Time:</strong> 19:00</p>
+                    <p><strong>Number of Adults:</strong> 4</p>
+                    <p><strong>Number of Children:</strong> 2</p>
+                    <p><strong>Special Requests:</strong> Vegetarian options required.</p>
+                </div>
+                <hr>
+                
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-links">
+                <ul>
+                    <a asp-controller="Home" asp-action="About">About</a>
+                    <a asp-controller="Home" asp-action="Menu">Menu</a>
+                    <a asp-controller="Home" asp-action="Booking">Booking</a>
+                </ul>
+            </div>
+            <div class="footer-contacts" id="contacts">
+                <ul>
+                    <li><a>Contacts</a></li>
+                    <li><p><b>info@rasai.co.nz</b></p></li>
+                    <li><p><b>0210 452 333</b></p></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+</div>
+

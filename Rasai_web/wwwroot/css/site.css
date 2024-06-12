@@ -1,0 +1,451 @@
+/* General styles for all pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    font-size: 4rem;
+}
+
+
+.p1 {
+    position: absolute;
+    font-size: 30px;
+    font-family: 'Trebuchet MS';
+}
+
+h4 {
+    color: green;
+    font-family: 'Trebuchet MS';
+}
+
+.ImgHome {
+    width: 100%;
+    height: auto;
+    display: block;
+    float: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .fishBox {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .TextFish {
+        position: static;
+        width: 100%;
+        font-size: 15px;
+        padding: 10%;
+        padding-top: 5%;
+        text-align: center;
+    }
+
+    .fish {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 1310px) and (min-width: 801px) {
+    .fishBox {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .TextFish {
+        position: static;
+        width: 100%;
+        font-size: 20px;
+        padding: 30px;
+        padding-top: 5%;
+        text-align: center;
+    }
+
+    .fish {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 250px) {
+    .navbar {
+        padding: 0.5rem 1rem; /* Added padding */
+    }
+
+    .navLinks a {
+        padding: 0 0.5rem; /* Added padding */
+        font-size: 1rem; /* Added font size */
+    }
+
+    .TextFish {
+        font-size: 12px; /* Added font size */
+        padding: 5%; /* Added padding */
+    }
+
+    .footer a,
+    .footer p {
+        font-size: 16px; /* Added font size */
+        margin: 0 0.5em; /* Added margin */
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .fishBox {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .TextFish {
+        position: static;
+        width: 100%;
+        font-size: 20px;
+        padding: 30px;
+        padding-top: 5%;
+        text-align: center;
+    }
+
+    .fish {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+    }
+}
+
+/* About page specific styles */
+.column1 {
+    margin-top: 2rem;
+    float: left;
+    width: 50%;
+    padding-right: 0;
+}
+
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.food {
+    width: auto;
+    padding-left: 3rem;
+    padding-bottom: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+h2 {
+    color: black;
+    font-family: Arial;
+    margin-top: 0;
+    margin-bottom: 7px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.green {
+    color: #1FC333;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.p1 {
+    color: black;
+    font-family: Arial;
+    font-size: 20px;
+    padding-right: 30px;
+    margin-top: 0;
+    margin-bottom: 13px;
+    padding-left: 30px;
+}
+
+.p2 {
+    color: black;
+    font-family: Arial;
+    font-size: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top: 9rem;
+}
+
+.abouthead {
+    color: black;
+    font-family: Arial;
+    margin-top: 0;
+    padding-left: 30px;
+    margin-bottom: 7px;
+}
+
+.Aboutme {
+    color: black;
+    font-family: Arial;
+    font-size: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.row2{
+    margin-top: 4.2rem;
+}
+@media screen and (max-width: 1210px) {
+    .column1 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .food {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* Booking page specific styles */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    background-color: lightgrey;
+    border-radius: 3px;
+    resize: vertical;
+}
+
+.top-text {
+    padding: 2%;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    border-radius: 5px;
+    padding: 20px;
+    padding-left: 10%;
+    margin: 0 auto;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.col-25 {
+    float: left;
+    width: 30%;
+    font-family: 'Franklin Gothic Medium';
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 60%;
+    font-family: 'Franklin Gothic Medium';
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+form{
+    width: 60%;
+}
+
+@media screen and (max-width: 600px) {
+    *{
+        font-size: 2rem;
+    }
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 80%;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 80%;
+        margin-top: 0;
+    }
+}
+
+/* Login page specific styles */
+.login-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+/*Menu Page*/
+
+
+form {
+    border: 2px solid black;
+    width: 60%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: white;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+    display: block;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    button:hover {
+        background-color: green;
+    }
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+.container {
+    padding: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+    text-align: right;
+    width: 100%;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    span.psw a {
+        text-decoration: none;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+}
+
+/* MENU PAGE STYLING! */
+
+* {
+    font-family: 'Trebuchet MS';
+}
+
+.top-text {
+    padding: 2%;
+}
+
+.food {
+    width: 350px; /* Fixed width for all images */
+    height: auto;
+    margin: 1px;
+}
+
+/* Flexbox container for image and text */
+.content {
+    display: flex;
+    align-items: center;
+    padding: 2%;
+}
+
+/* Adjust text content area */
+.text-content {
+    max-width: 70%;
+    margin-left: 30px;
+}
+
+/* Responsive layout - adjustes the size of the image
+and text*/
+@media screen and (max-width: 650px) {
+    .text-content {
+        max-width: 70%;
+        margin-left: 20px;
+        font-size: 10px;
+    }
+
+    .food {
+        width: 150px; /* Fixed width for all images */
+        height: auto;
+        margin: 1px;
+    }
+
+    .top-text {
+        padding: 2%;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 651px) {
+    .text-content {
+        max-width: 60%;
+        margin-left: 20px;
+        font-size: 11px;
+    }
+
+    .food {
+        width: 200px; /* Fixed width for all images */
+        height: auto;
+        margin: 1px;
+    }
+
+    .top-text {
+        padding: 2%;
+        font-size: 11px;
+    }
+}
