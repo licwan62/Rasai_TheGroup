@@ -12,8 +12,8 @@
     <script src="/js/site.js"></script>
 </head>
 <style>
-  
-    html, body{
+
+    html, body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
@@ -21,9 +21,8 @@
         width: 100%;
         background-color: #f2f2f2;
         font-size: 16px;
-        
-
     }
+
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -42,53 +41,53 @@
         }
 
             .navbar a:hover {
-                
                 background-color: white;
                 color: black;
-                }
-    .navLinks{
+            }
+
+    .navLinks {
         display: flex;
         justify-content: space-between;
         padding-right: 2em;
-        
-
     }
 
-    .navLinks a{
-        padding: 0 5rem;
-    }
+        .navLinks a {
+            padding: 0 5rem;
+        }
 
     .logo img {
         height: 3.2em;
     }
 
-    .fishBox{
+    .fishBox {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: -4rem;
     }
-    .TextFish{
+
+    .TextFish {
         padding: auto;
     }
 
-    .TextFish a{
-        text-decoration: none;
-        margin-right: 2rem;
-        padding: auto;
-    }
-    .TextFish h2{
-        margin: 2rem 0;
-        margin-right: 2rem;
-        padding: auto;
-    }
+        .TextFish a {
+            text-decoration: none;
+            margin-right: 2rem;
+            padding: auto;
+        }
 
-    .TextFish p{
-            
+        .TextFish h2 {
+            margin: 2rem 0;
+            margin-right: 2rem;
+            padding: auto;
+        }
+
+        .TextFish p {
             margin: auto;
             padding: auto;
-    }
-    .footer{
+        }
+
+    .footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -96,10 +95,10 @@
         margin: 0;
         padding: 0;
         width: 100%;
-
     }
-    .footer-links{
-        display:flex;
+
+    .footer-links {
+        display: flex;
         justify-content: space-evenly;
         align-items: center;
     }
@@ -116,96 +115,97 @@
         color: white;
         margin: 0 2em;
     }
+
     @@media screen and (max-width: 800px) {
-       
-    .fishBox {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
 
-    .TextFish {
-        position: static;
-        width: 100%;
-        font-size: 15px;
-        padding: 10%;
-        padding-top: 5%;
-        text-align: center;
-    }
+        .fishBox {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
 
-    .fish {
-        width: 100%;
-        max-width: none;
-        margin-left: 0;
+        .TextFish {
+            position: static;
+            width: 100%;
+            font-size: 15px;
+            padding: 10%;
+            padding-top: 5%;
+            text-align: center;
+        }
+
+        .fish {
+            width: 100%;
+            max-width: none;
+            margin-left: 0;
+        }
     }
-}
 
     @@media screen and (max-width: 1310px) and (min-width: 801px) {
-    .fishBox {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
+        .fishBox {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
 
-    .TextFish {
-        position: static;
-        width: 100%;
-        font-size: 20px;
-        padding: 30px;
-        padding-top: 5%;
-        text-align: center;
-    }
+        .TextFish {
+            position: static;
+            width: 100%;
+            font-size: 20px;
+            padding: 30px;
+            padding-top: 5%;
+            text-align: center;
+        }
 
-    .fish {
-        width: 100%;
-        max-width: none;
-        margin-left: 0;
+        .fish {
+            width: 100%;
+            max-width: none;
+            margin-left: 0;
+        }
     }
-}
 
 
 
     @@media screen and (max-width: 250px) {
-    .navbar {
-        padding: 0.5rem 1rem; /* Added padding */
-    }
+        .navbar {
+            padding: 0.5rem 1rem; /* Added padding */
+        }
 
-    .navLinks a {
-        padding: 0 0.5rem; /* Added padding */
-        font-size: 1rem; /* Added font size */
-    }
+        .navLinks a {
+            padding: 0 0.5rem; /* Added padding */
+            font-size: 1rem; /* Added font size */
+        }
 
-    .TextFish {
-        font-size: 12px; /* Added font size */
-        padding: 5%; /* Added padding */
-    }
+        .TextFish {
+            font-size: 12px; /* Added font size */
+            padding: 5%; /* Added padding */
+        }
 
-    .footer a,
-    .footer p {
-        font-size: 16px; /* Added font size */
-        margin: 0 0.5em; /* Added margin */
+        .footer a,
+        .footer p {
+            font-size: 16px; /* Added font size */
+            margin: 0 0.5em; /* Added margin */
+        }
     }
-}
 
     @@media screen and (min-width: 1300px) {
-    .fishBox {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
+        .fishBox {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
 
-    .TextFish {
-        position: static;
-        width: 100%;
-        font-size: 20px;
-        padding: 30px;
-        padding-top: 5%;
-        text-align: center;
-    }
+        .TextFish {
+            position: static;
+            width: 100%;
+            font-size: 20px;
+            padding: 30px;
+            padding-top: 5%;
+            text-align: center;
+        }
 
-    .fish {
-        width: 100%;
-        max-width: none;
-        margin-left: 0;
+        .fish {
+            width: 100%;
+            max-width: none;
+            margin-left: 0;
+        }
     }
-}
 </style>
 
 
@@ -213,20 +213,20 @@
 
 <div class="navbar">
     <div class="logo-box">
-    <a asp-controller="Home" asp-action="Index" class="logo">
-        <img src="/lib/Logo.png" alt="Go to home page">
-    </a>
+        <a asp-controller="Home" asp-action="Index" class="logo">
+            <img src="/lib/Logo.png" alt="Go to home page">
+        </a>
     </div>
     <div class="navLinks">
-    <a asp-controller="Home" asp-action="About">About</a>
-    <a asp-controller="Home" asp-action="Menu">Menu</a>
-    <a asp-controller="Booking" asp-action="index">Booking</a>
-    <a asp-controller="Home" asp-action="Admin">Login</a>
+        <a asp-controller="Home" asp-action="About">About</a>
+        <a asp-controller="Home" asp-action="Menu">Menu</a>
+        <a asp-controller="Booking" asp-action="index">Booking</a>
+        <a asp-controller="Home" asp-action="Admin">Login</a>
 
     </div>
 </div>
 
-    @* <div class="dropdown">
+@* <div class="dropdown">
         <a href="javascript:void(0);" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
@@ -248,14 +248,14 @@
 
 <div class="fishBox">
     <div class="right">
-    <img class="fish" src="/lib/7Kottu.png" alt="Fish"></a>
+        <img class="fish" src="/lib/7Kottu.png" alt="Fish"></a>
     </div>
 
     <div class="TextFish">
         <h2>RASAI</h2>
-      
+
         <b><p1>Fabulous Sri Lankan food</p1></b>
- 
+
         <a asp-controller="MenuItems" asp-action="Index"><h4>Visit our menu!</h4></a>
     </div>
 </div>
